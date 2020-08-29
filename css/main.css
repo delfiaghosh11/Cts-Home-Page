@@ -90,6 +90,15 @@ html {
     content: '';
 }
 
+.nav1 a:hover {
+    background-color: transparent;
+    color: #00b140;
+    transition: .3s ease-in-out;
+}
+
+
+/* Navbar 1 End */
+
 
 /* Navbar 2 */
 
@@ -102,6 +111,11 @@ html {
     background-color: #0033a0;
     color: #fff;
     transition: .3s ease-in-out;
+}
+
+.nav2 .nav-link:focus {
+    background-color: #0033a0;
+    color: #fff;
 }
 
 .nav2 .dropdown {
@@ -141,6 +155,10 @@ html {
     margin-left: 150px;
 }
 
+.nav2 .navbar-brand:hover {
+    background-color: transparent;
+}
+
 @media only screen and (max-width:768px) {
     .navbar-brand {
         margin-left: 0px;
@@ -162,6 +180,96 @@ html {
     width: 20px;
     vertical-align: middle;
 }
+
+.nav2 .dropdown-item {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav2 .desc {
+    line-height: 1.3;
+}
+
+.nav2 .desc:hover {
+    background-color: transparent;
+}
+
+.nav2 .row {
+    margin-left: 120px;
+    margin-right: 100px;
+}
+
+.nav2 a:hover {
+    background-color: #06276d;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.nav2 img:hover {
+    background-color: transparent;
+}
+
+.pic {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+}
+
+.arrow-left {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #00b140;
+}
+
+.arrow-right {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #00b140;
+}
+
+.arrow-up {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #00b140;
+}
+
+.arrow-down {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #00b140;
+}
+
+.perpective-app-banner {
+    background: url(../images/perspectives-app-banner-mobile_new.jpg) no-repeat;
+    background-size: 100% auto;
+    height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.app-banner-download {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.app-banner-download a {
+    margin-bottom: 10px;
+    background: transparent !important;
+    padding: 0;
+}
+
+.app-banner-download img {
+    width: 45%;
+}
+
+
+/* Navbar 2 End */
 
 
 /* Slideshow Carousel */
@@ -324,4 +432,42 @@ html {
     .carousel-item img {
         min-height: 500px;
     }
+}
+
+
+/*back-to-top*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.back-to-top.hide {
+    display: none;
+}
+
+.back-to-top .text {
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-right: -6px;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    white-space: nowrap;
+    background-color: rgba(0, 51, 160, 0.85);
+}
+
+.back-to-top .icon {
+    background-color: #0033a0;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.back-to-top .icon svg {
+    width: 20px;
+    transform: rotate(180deg);
+    height: 20px;
 }
