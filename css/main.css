@@ -311,7 +311,14 @@ html {
 
 .carousel-caption p {
     position: relative;
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
+}
+
+@media only screen and (max-width: 567px) {
+    .carousel-caption p {
+        position: relative;
+        overflow-wrap: break-word;
+    }
 }
 
 .carousel-text-head {
@@ -443,7 +450,19 @@ html {
     right: 20px;
 }
 
-.back-to-top.hide {
+@media only screen and (max-width: 1320px) {
+    .back-to-top {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .back-to-top {
+        display: none;
+    }
+}
+
+.back-to-top .hide {
     display: none;
 }
 
@@ -471,3 +490,431 @@ html {
     transform: rotate(180deg);
     height: 20px;
 }
+
+
+/* Card Styles */
+
+.button-outline-white {
+    border: 1px solid transparent;
+    background-color: #00b140;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.button-outline-white:hover {
+    border: 1px solid transparent;
+    background-color: #0a8f3b;
+}
+
+.button-outline-white svg {
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    transform: rotate(-90deg);
+}
+
+.button-outline-white span {
+    vertical-align: middle;
+}
+
+.button-outline-blue {
+    border: 1px solid transparent;
+    background-color: #0033a0;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3px 8px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.button-outline-blue:hover {
+    background-color: #0033a0;
+}
+
+.button-outline-blue svg {
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    transform: rotate(-90deg);
+}
+
+.button-outline-blue span {
+    vertical-align: middle;
+}
+
+
+/* Card 1 Start */
+
+.card1 .card {
+    margin: 40px 150px 0px 150px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .card1 .card {
+        margin: 40px 8px 0px 8px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .card1 .card {
+        margin: 40px 15px 0px 15px;
+    }
+}
+
+.card1 .card-img {
+    width: 320px;
+    height: 285px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .card1 .card-img {
+        width: 360px;
+        height: 335px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .card1 .card-img {
+        width: 328px;
+        height: 330px;
+    }
+}
+
+.card1 .card-title {
+    font-weight: 700;
+    color: #0033a0;
+}
+
+@media only screen and (max-width: 567px) {
+    .card1 .card-title {
+        font-size: 20px;
+    }
+}
+
+.card1 .card-text {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@media only screen and (max-width: 567px) {
+    .card1 .card-text {
+        line-height: 1.1;
+        font-size: 17px;
+    }
+}
+
+
+/* Card 1 End */
+
+
+/* Card 2 Start */
+
+.card2 .card {
+    margin: 30px 0px 0px 135px;
+    width: 600px;
+    height: 640px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .card2 .card {
+        margin: 30px 0px 0px -6px;
+        width: 400px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .card2 .card {
+        margin: 30px 0px 0px 0px;
+        width: auto;
+        height: auto;
+    }
+}
+
+.card2 .card-title {
+    font-weight: 700;
+    color: #0033a0;
+}
+
+@media only screen and (max-width: 567px) {
+    .card2 .card-title {
+        font-size: 20px;
+    }
+}
+
+.card2 .card-text {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@media only screen and (max-width: 567px) {
+    .card2 .card-text {
+        line-height: 1.1;
+        font-size: 17px;
+    }
+}
+
+.card2 .card-text .text-highlight {
+    color: #00b140;
+}
+
+
+/* Card 2 End */
+
+
+/* Card 3 Start */
+
+.card3 .card {
+    margin: 30px 135px 0px -3px;
+    width: 600px;
+    height: 640px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .card3 .card {
+        margin: 30px -6px 0px 0px;
+        width: 400px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .card3 .card {
+        margin: 30px 0px 0px 0px;
+        width: auto;
+        height: auto;
+    }
+}
+
+.card3 .card-title {
+    font-weight: 700;
+    color: #0033a0;
+}
+
+@media only screen and (max-width: 567px) {
+    .card3 .card-title {
+        font-size: 20px;
+    }
+}
+
+.card3 .card-text {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@media only screen and (max-width: 567px) {
+    .card3 .card-text {
+        line-height: 1.1;
+        font-size: 17px;
+    }
+}
+
+.card3 .card-title .text-highlight {
+    color: #00b140;
+}
+
+
+/* Card 3 End */
+
+
+/* Card 4 Start */
+
+.card4 .card {
+    margin: 40px 150px 0px 150px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .card4 .card {
+        margin: 40px 8px 0px 8px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .card4 .card {
+        margin: 40px 15px 0px 15px;
+    }
+}
+
+.card4 .card-img {
+    width: 320px;
+    height: 285px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .card4 .card-img {
+        width: 360px;
+        height: 335px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .card4 .card-img {
+        width: 328px;
+        height: 330px;
+    }
+}
+
+.card4 .card-title {
+    font-weight: 700;
+    color: #0033a0;
+}
+
+@media only screen and (max-width: 567px) {
+    .card4 .card-title {
+        font-size: 20px;
+    }
+}
+
+.card4 .card-text {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@media only screen and (max-width: 567px) {
+    .card4 .card-text {
+        line-height: 1.1;
+        font-size: 17px;
+    }
+}
+
+
+/* Card 4 End */
+
+
+/* Annual Report Start */
+
+.annual-report {
+    background-color: #e6e6e6;
+    margin-top: 70px;
+}
+
+.annual-report .heading-report {
+    font-weight: 700;
+    color: #0033a0;
+}
+
+@media only screen and (max-width: 567px) {
+    .annual-report .heading-report {
+        font-size: 20px;
+    }
+}
+
+.annual-report .text-report {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@media only screen and (max-width: 567px) {
+    .annual-report .text-report {
+        line-height: 1.1;
+        font-size: 17px;
+    }
+}
+
+.annual-report .annual-report-img {
+    margin: 20px 0px 50px 210px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .annual-report .annual-report-img {
+        margin: 70px 0px 90px 80px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .annual-report .annual-report-img {
+        margin: 80px 40px 30px 60px;
+    }
+}
+
+.annual-report .annual-report-desc {
+    margin: 70px 250px 50px 250px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .annual-report .annual-report-desc {
+        margin: 100px 0px 50px 240px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .annual-report .annual-report-desc {
+        margin: 20px 40px 150px 60px;
+        padding-right: 50px;
+    }
+}
+
+
+/* Annual Report End */
+
+
+/* Press Release Start */
+
+.press-release .press-release-heading {
+    font-weight: 600;
+    color: #0033a0;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 567px) {
+    .press-release .press-release-heading {
+        font-weight: 500;
+        font-size: 30px;
+    }
+}
+
+.press-release .press-release-date {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 567px) {
+    .press-release .press-release-date {
+        font-size: 14px;
+    }
+}
+
+.press-release .press-release-text {
+    color: #00b140;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+@media only screen and (max-width: 567px) {
+    .press-release .press-release-text {
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 1.2;
+    }
+}
+
+.press-release .press-release-text:hover {
+    color: #0a8f3b;
+}
+
+.press-release .press-release-button {
+    float: right;
+}
+
+@media only screen and (max-width: 567px) {
+    .press-release .press-release-button {
+        position: absolute;
+        margin-left: 25px;
+    }
+}
+
+
+/* Press Release End */
