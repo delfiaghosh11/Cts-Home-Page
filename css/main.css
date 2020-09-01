@@ -942,6 +942,13 @@
     .latest-thinking {
         background-color: #e6e6e6;
     }
+    /* .latest-thinking .container {} */
+    
+    @media (max-width: 567px) {
+        .latest-thinking .container {
+            max-width: 330px;
+        }
+    }
     
     .latest-thinking .latest-thinking-heading {
         color: #0033a0;
@@ -981,6 +988,11 @@
         transform: rotate(-90deg);
         float: right;
     }
+    
+    .latest-thinking .download-button {
+        float: right;
+        margin-right: 20px;
+    }
     /* Card 1 Start */
     
     .latest-thinking .carousel-item .card-1 {
@@ -990,9 +1002,19 @@
     
     @media (max-width: 1320px) {
         .latest-thinking .carousel-item .card-1 {
-            min-height: 314px;
+            min-height: 350px;
             min-width: 540px;
+            margin-left: -15px;
+            margin-right: -10px;
+        }
+    }
+    
+    @media (max-width: 567px) {
+        .latest-thinking .carousel-item .card-1 {
+            min-height: 350px;
             margin-bottom: 20px;
+            min-width: 330px;
+            margin-right: 2px;
             margin-left: -15px;
         }
     }
@@ -1021,6 +1043,14 @@
         }
     }
     
+    @media (max-width: 567px) {
+        .latest-thinking .carousel-item .card-1 .card-title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+    }
+    
     .latest-thinking .carousel-item .card-1 .card-text {
         text-align: left;
         font-size: 20px;
@@ -1029,7 +1059,11 @@
     }
     
     @media (max-width: 567px) {
-        .latest-thinking .carousel-item .card-1 .card-text {}
+        .latest-thinking .carousel-item .card-1 .card-text {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1;
+        }
     }
     
     .latest-thinking .carousel-item .card-1 .card-footer {
@@ -1055,6 +1089,12 @@
         position: relative;
         min-height: 314px;
     }
+    /* @media (max-width: 567px) {
+        .latest-thinking .carousel-item .card-2 {
+            margin-right: 13px;
+            margin-left: 14px;
+        }
+    } */
     
     .latest-thinking .carousel-item .card-2 .card-img-top {
         max-height: 200px;
@@ -1067,11 +1107,27 @@
         margin-top: 80px;
     }
     
+    @media (max-width: 567px) {
+        .latest-thinking .carousel-item .card-2 .card-title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+    }
+    
     .latest-thinking .carousel-item .card-2 .card-text {
         text-align: left;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
+    }
+    
+    @media (max-width: 567px) {
+        .latest-thinking .carousel-item .card-2 .card-text {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1;
+        }
     }
     
     .latest-thinking .carousel-item .card-2 .card-footer {
@@ -1097,6 +1153,12 @@
         position: relative;
         min-height: 314px;
     }
+    /* @media (max-width: 567px) {
+        .latest-thinking .carousel-item .card-3 {
+            margin-right: 13px;
+            margin-left: 14px;
+        }
+    } */
     
     .latest-thinking .carousel-item .card-3 .card-img-top {
         max-height: 220px;
@@ -1109,11 +1171,27 @@
         margin-top: 80px;
     }
     
+    @media (max-width: 567px) {
+        .latest-thinking .carousel-item .card-3 .card-title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+    }
+    
     .latest-thinking .carousel-item .card-3 .card-text {
         text-align: left;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
+    }
+    
+    @media (max-width: 567px) {
+        .latest-thinking .carousel-item .card-3 .card-text {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1;
+        }
     }
     
     .latest-thinking .carousel-item .card-3 .card-footer {
@@ -1134,3 +1212,5 @@
     }
     /* Card 3 End */
     /* Latest Thinking Carousel End */
+    /* Digitally Cognizant Start */
+    /* Digitally Cognizant End */
