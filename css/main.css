@@ -1003,9 +1003,9 @@
     @media (max-width: 1320px) {
         .latest-thinking .carousel-item .card-1 {
             min-height: 350px;
-            min-width: 540px;
+            /* min-width: 540px;
             margin-left: -15px;
-            margin-right: -10px;
+            margin-right: -10px; */
         }
     }
     
@@ -1013,9 +1013,9 @@
         .latest-thinking .carousel-item .card-1 {
             min-height: 350px;
             margin-bottom: 20px;
-            min-width: 330px;
+            /* min-width: 330px;
             margin-right: 2px;
-            margin-left: -15px;
+            margin-left: -15px; */
         }
     }
     
@@ -1107,6 +1107,14 @@
         margin-top: 80px;
     }
     
+    @media (max-width: 1320px) {
+        .latest-thinking .carousel-item .card-2 .card-title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+    }
+    
     @media (max-width: 567px) {
         .latest-thinking .carousel-item .card-2 .card-title {
             font-size: 20px;
@@ -1120,6 +1128,14 @@
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
+    }
+    
+    @media (max-width: 1320px) {
+        .latest-thinking .carousel-item .card-2 .card-text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1;
+        }
     }
     
     @media (max-width: 567px) {
@@ -1171,6 +1187,14 @@
         margin-top: 80px;
     }
     
+    @media (max-width: 1320px) {
+        .latest-thinking .carousel-item .card-3 .card-title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+    }
+    
     @media (max-width: 567px) {
         .latest-thinking .carousel-item .card-3 .card-title {
             font-size: 20px;
@@ -1184,6 +1208,14 @@
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
+    }
+    
+    @media (max-width: 1320px) {
+        .latest-thinking .carousel-item .card-3 .card-text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1;
+        }
     }
     
     @media (max-width: 567px) {
