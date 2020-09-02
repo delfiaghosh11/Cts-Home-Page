@@ -159,7 +159,7 @@
         }
     }
     
-    @media only screen and (max-width:576px) {
+    @media only screen and (max-width:480px) {
         .navbar-brand {
             margin-left: 0px;
         }
@@ -291,9 +291,17 @@
         transform: translate(0, -50%);
     }
     
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
         .slide-show .carousel-caption {
-            top: 48%;
+            top: 56%;
+            bottom: auto;
+            transform: translate(0, -50%);
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .slide-show .carousel-caption {
+            top: 55%;
             bottom: auto;
             transform: translate(0, -50%);
         }
@@ -304,7 +312,7 @@
         overflow-wrap: normal;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .slide-show .carousel-caption p {
             position: relative;
             overflow-wrap: break-word;
@@ -321,10 +329,20 @@
         text-align: left;
     }
     
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
         .slide-show .carousel-text-head {
             font-weight: 700;
-            font-size: 35px;
+            font-size: 40px;
+            font-style: normal;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .slide-show .carousel-text-head {
+            font-weight: 700;
+            font-size: 30px;
             font-style: normal;
             line-height: 1;
             margin-bottom: 30px;
@@ -340,7 +358,16 @@
         color: #000;
     }
     
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
+        .slide-show .carousel-text-body {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .slide-show .carousel-text-body {
             font-weight: 500;
             font-size: 16px;
@@ -384,7 +411,14 @@
         transform: rotate(90deg);
     }
     
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
+        .slide-show .carousel-button-left svg {
+            height: 40px;
+            width: 40px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .slide-show .carousel-button-left svg {
             height: 25px;
             width: 25px;
@@ -398,7 +432,14 @@
         transform: rotate(-90deg);
     }
     
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
+        .slide-show .carousel-button-right svg {
+            height: 40px;
+            width: 40px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .slide-show .carousel-button-right svg {
             height: 25px;
             width: 25px;
@@ -413,7 +454,7 @@
         min-height: 500px;
     }
     
-    @media only screen and (min-width: 768px) {
+    @media only screen and (max-width: 768px) {
         .slide-show .carousel-item {
             min-height: 500px;
         }
@@ -422,7 +463,7 @@
         }
     }
     
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 480px) {
         .slide-show .carousel-item {
             min-height: 500px;
         }
@@ -438,13 +479,13 @@
         right: 20px;
     }
     
-    @media only screen and (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .back-to-top {
             display: none;
         }
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .back-to-top {
             display: none;
         }
@@ -543,7 +584,7 @@
         margin-left: auto;
     }
     
-    @media (max-width: 1320px) {
+    @media (max-width: 768px) {
         .card-section {
             max-width: 860px;
         }
@@ -554,13 +595,13 @@
         margin: 40px 0px 0px 0px;
     }
     
-    @media only screen and (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .card1 .card {
-            margin: 40px 0px 0px 0px;
+            margin: 40px 10px 0px 10px;
         }
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .card1 .card {
             margin: 40px 15px 0px 15px;
         }
@@ -571,14 +612,14 @@
         height: 100%;
     }
     
-    @media only screen and (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .card1 .card-img {
             width: 100%;
             height: 100%;
         }
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .card1 .card-img {
             width: 100%;
             height: 100%;
@@ -590,7 +631,13 @@
         color: #0033a0;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .card1 .card-title {
+            font-size: 24px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .card1 .card-title {
             font-size: 20px;
         }
@@ -601,7 +648,14 @@
         line-height: 1.2;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .card1 .card-text {
+            line-height: 1.1;
+            font-size: 19px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .card1 .card-text {
             line-height: 1.1;
             font-size: 17px;
@@ -616,15 +670,15 @@
         height: 640px;
     }
     
-    @media only screen and (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .card2 .card {
-            margin: 30px 5px 0px 0px;
-            width: 100%;
-            height: 600px;
+            margin: 30px 5px 0px 10px;
+            width: 95%;
+            height: 580px;
         }
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .card2 .card {
             margin: 30px 0px 0px 0px;
             width: auto;
@@ -637,7 +691,13 @@
         color: #0033a0;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .card2 .card-title {
+            font-size: 24px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .card2 .card-title {
             font-size: 20px;
         }
@@ -648,7 +708,14 @@
         line-height: 1.2;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .card2 .card-text {
+            line-height: 1.1;
+            font-size: 19px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .card2 .card-text {
             line-height: 1.1;
             font-size: 17px;
@@ -667,15 +734,15 @@
         height: 640px;
     }
     
-    @media only screen and (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .card3 .card {
-            margin: 30px 0px 0px 5px;
-            width: 100%;
-            height: 600px;
+            margin: 30px 10px 0px 5px;
+            width: 95%;
+            height: 580px;
         }
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .card3 .card {
             margin: 30px 0px 0px 0px;
             width: auto;
@@ -688,7 +755,13 @@
         color: #0033a0;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .card3 .card-title {
+            font-size: 24px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .card3 .card-title {
             font-size: 20px;
         }
@@ -699,7 +772,14 @@
         line-height: 1.2;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .card3 .card-text {
+            line-height: 1.1;
+            font-size: 19px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .card3 .card-text {
             line-height: 1.1;
             font-size: 17px;
@@ -716,13 +796,13 @@
         margin: 30px 0px 0px 0px;
     }
     
-    @media only screen and (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .card4 .card {
-            margin: 30px 0px 0px 0px;
+            margin: 30px 10px 0px 10px;
         }
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .card4 .card {
             margin: 30px 15px 0px 15px;
         }
@@ -733,14 +813,14 @@
         height: 285px;
     }
     
-    @media only screen and (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .card4 .card-img {
             width: 100%;
             height: 100%;
         }
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .card4 .card-img {
             width: 100%;
             height: 100%;
@@ -752,7 +832,13 @@
         color: #0033a0;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .card4 .card-title {
+            font-size: 24px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .card4 .card-title {
             font-size: 20px;
         }
@@ -763,7 +849,14 @@
         line-height: 1.2;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .card4 .card-text {
+            line-height: 1.1;
+            font-size: 19px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .card4 .card-text {
             line-height: 1.1;
             font-size: 17px;
@@ -782,7 +875,13 @@
         color: #0033a0;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .annual-report .heading-report {
+            font-size: 24px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .annual-report .heading-report {
             font-size: 20px;
         }
@@ -793,7 +892,13 @@
         line-height: 1.2;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .annual-report .text-report {
+            font-size: 19px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .annual-report .text-report {
             line-height: 1.1;
             font-size: 17px;
@@ -804,14 +909,14 @@
         margin: 20px 0px 50px 210px;
     }
     
-    @media only screen and (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .annual-report .annual-report-img {
             display: block;
-            margin: 70px auto 90px auto;
+            margin: 70px auto 90px 80px;
         }
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .annual-report .annual-report-img {
             display: block;
             margin: 90px auto 30px auto;
@@ -822,14 +927,14 @@
         margin: 70px 250px 50px 250px;
     }
     
-    @media only screen and (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .annual-report .annual-report-desc {
             margin: 100px 0px 50px 240px;
             padding-right: 50px;
         }
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .annual-report .annual-report-desc {
             margin: 20px 40px 150px 60px;
             padding-right: 50px;
@@ -847,7 +952,14 @@
         margin-bottom: 30px;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .press-release .press-release-heading {
+            font-weight: 500;
+            font-size: 40px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .press-release .press-release-heading {
             font-weight: 500;
             font-size: 30px;
@@ -860,7 +972,13 @@
         margin-bottom: 3px;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .press-release .press-release-date {
+            font-size: 16px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .press-release .press-release-date {
             font-size: 14px;
         }
@@ -873,7 +991,14 @@
         line-height: 1.3;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .press-release .press-release-text {
+            font-size: 22px;
+            line-height: 1.2;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .press-release .press-release-text {
             font-weight: 600;
             font-size: 19px;
@@ -889,7 +1014,13 @@
         float: right;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .press-release .press-release-button {
+            margin-top: 30px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .press-release .press-release-button {
             position: absolute;
             margin-left: 25px;
@@ -903,13 +1034,25 @@
         margin: 140px auto 40px auto;
     }
     
+    @media only screen and (max-width: 768px) {
+        .cts-reports .container {
+            max-width: 100%;
+        }
+    }
+    
     .cts-reports .cts-reports-date {
         color: white;
         font-weight: 600;
         font-size: 17px;
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .cts-reports .cts-reports-date {
+            font-size: 16px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .cts-reports .cts-reports-date {
             font-size: 14px;
         }
@@ -921,7 +1064,13 @@
         font-size: 26px;
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .cts-reports .cts-reports-text {
+            font-size: 24px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .cts-reports .cts-reports-text {
             font-size: 20px;
         }
@@ -931,7 +1080,7 @@
         margin: 10px auto 50px auto;
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .cts-reports button {
             margin: 5px auto 25px auto;
         }
@@ -944,7 +1093,13 @@
     }
     /* .latest-thinking .container {} */
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .latest-thinking .container {
+            max-width: 600px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .latest-thinking .container {
             max-width: 330px;
         }
@@ -956,6 +1111,20 @@
         font-size: 46px;
     }
     
+    @media only screen and (max-width: 768px) {
+        .latest-thinking .latest-thinking-heading {
+            font-size: 38px;
+            padding: 30px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .latest-thinking .latest-thinking-heading {
+            font-size: 30px;
+            padding: 20px;
+        }
+    }
+    
     .latest-thinking .carousel-button-left svg {
         height: 50px;
         width: 50px;
@@ -963,7 +1132,14 @@
         transform: rotate(90deg);
     }
     
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
+        .latest-thinking .carousel-button-left svg {
+            height: 40px;
+            width: 40px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-button-left svg {
             height: 25px;
             width: 25px;
@@ -977,7 +1153,14 @@
         transform: rotate(-90deg);
     }
     
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
+        .latest-thinking .carousel-button-right svg {
+            height: 40px;
+            width: 40px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-button-right svg {
             height: 25px;
             width: 25px;
@@ -1000,16 +1183,16 @@
         min-height: 650px;
     }
     
-    @media (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .latest-thinking .carousel-item .card-1 {
             min-height: 350px;
-            /* min-width: 540px;
-            margin-left: -15px;
+            /* max-width: 600px; */
+            /* margin-left: -15px;
             margin-right: -10px; */
         }
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-item .card-1 {
             min-height: 350px;
             margin-bottom: 20px;
@@ -1023,7 +1206,7 @@
         max-height: 300px;
     }
     
-    @media (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .latest-thinking .carousel-item .card-1 .card-img-top {
             max-height: 200px;
         }
@@ -1036,14 +1219,14 @@
         margin-top: 120px;
     }
     
-    @media (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .latest-thinking .carousel-item .card-1 .card-title {
             font-size: 22px;
             margin-top: 65px;
         }
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-item .card-1 .card-title {
             font-size: 20px;
             font-weight: 500;
@@ -1058,7 +1241,7 @@
         line-height: 1.2;
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-item .card-1 .card-text {
             font-size: 17px;
             font-weight: 500;
@@ -1089,7 +1272,7 @@
         position: relative;
         min-height: 314px;
     }
-    /* @media (max-width: 567px) {
+    /* @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-item .card-2 {
             margin-right: 13px;
             margin-left: 14px;
@@ -1107,7 +1290,7 @@
         margin-top: 80px;
     }
     
-    @media (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .latest-thinking .carousel-item .card-2 .card-title {
             font-size: 20px;
             font-weight: 500;
@@ -1115,7 +1298,7 @@
         }
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-item .card-2 .card-title {
             font-size: 20px;
             font-weight: 500;
@@ -1130,7 +1313,7 @@
         line-height: 1.2;
     }
     
-    @media (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .latest-thinking .carousel-item .card-2 .card-text {
             font-size: 18px;
             font-weight: 500;
@@ -1138,7 +1321,7 @@
         }
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-item .card-2 .card-text {
             font-size: 17px;
             font-weight: 500;
@@ -1169,7 +1352,7 @@
         position: relative;
         min-height: 314px;
     }
-    /* @media (max-width: 567px) {
+    /* @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-item .card-3 {
             margin-right: 13px;
             margin-left: 14px;
@@ -1187,7 +1370,7 @@
         margin-top: 80px;
     }
     
-    @media (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .latest-thinking .carousel-item .card-3 .card-title {
             font-size: 20px;
             font-weight: 500;
@@ -1195,7 +1378,7 @@
         }
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-item .card-3 .card-title {
             font-size: 20px;
             font-weight: 500;
@@ -1210,7 +1393,7 @@
         line-height: 1.2;
     }
     
-    @media (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .latest-thinking .carousel-item .card-3 .card-text {
             font-size: 18px;
             font-weight: 500;
@@ -1218,7 +1401,7 @@
         }
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .latest-thinking .carousel-item .card-3 .card-text {
             font-size: 17px;
             font-weight: 500;
@@ -1294,7 +1477,32 @@
         font-size: 1.1vw;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .dc-section .dc-heading {
+            font-size: 38px;
+            margin-top: 70px;
+        }
+        .dc-section .text {
+            font-size: 16px;
+        }
+        .dc-section .link {
+            font-size: 16px;
+        }
+        .dc-section .dc-date {
+            font-size: 14px;
+        }
+        .dc-section .dc-content-heading {
+            font-size: 20px;
+        }
+        .dc-section .dc-text {
+            font-size: 18px;
+        }
+        .dc-section .dc-author {
+            font-size: 14px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .dc-section .dc-heading {
             font-size: 22px;
             margin-top: 30px;
@@ -1325,14 +1533,14 @@
         width: 60px;
     }
     
-    @media only screen and (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .dc-section img {
-            height: 40px;
-            width: 40px;
+            height: 45px;
+            width: 45px;
         }
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .dc-section img {
             height: 25px;
             width: 25px;
@@ -1343,7 +1551,13 @@
         font-size: large;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .dc-section .dc-button .button {
+            margin-right: 20px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .dc-section .dc-button .button {
             margin-left: 55px;
             font-size: 12px;
@@ -1376,10 +1590,11 @@
         font-size: 1.3vw;
     }
     
-    @media (max-width: 1320px) {
+    @media only screen and (max-width: 768px) {
         .fs-section .fs-heading {
-            font-size: 46px;
+            font-size: 42px;
             margin-top: 30px;
+            font-weight: 600;
         }
         .fs-section .fs-intro {
             font-size: 20px;
@@ -1389,7 +1604,7 @@
         }
     }
     
-    @media (max-width: 567px) {
+    @media only screen and (max-width: 480px) {
         .fs-section .fs-heading {
             font-size: 30px;
             margin-top: 0px;
@@ -1527,7 +1742,14 @@
         font-size: large;
     }
     
-    @media only screen and (max-width: 567px) {
+    @media only screen and (max-width: 768px) {
+        .fs-section .fs-button .button {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .fs-section .fs-button .button {
             margin-left: 10px;
             font-size: 18px;
