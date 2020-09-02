@@ -905,39 +905,15 @@
         }
     }
     
-    .annual-report .annual-report-img {
-        margin: 20px 0px 50px 210px;
-    }
+    .annual-report .annual-report-desc {}
     
     @media only screen and (max-width: 768px) {
-        .annual-report .annual-report-img {
-            display: block;
-            margin: 70px auto 90px 80px;
-        }
-    }
-    
-    @media only screen and (max-width: 480px) {
-        .annual-report .annual-report-img {
-            display: block;
-            margin: 90px auto 30px auto;
-        }
-    }
-    
-    .annual-report .annual-report-desc {
-        margin: 70px 250px 50px 250px;
-    }
-    
-    @media only screen and (max-width: 768px) {
-        .annual-report .annual-report-desc {
-            margin: 100px 0px 50px 240px;
-            padding-right: 50px;
-        }
+        .annual-report .annual-report-desc {}
     }
     
     @media only screen and (max-width: 480px) {
         .annual-report .annual-report-desc {
-            margin: 20px 40px 150px 60px;
-            padding-right: 50px;
+            margin: auto 40px auto 40px;
         }
     }
     /* Annual Report End */
