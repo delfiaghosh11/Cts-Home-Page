@@ -304,6 +304,19 @@
     /* Navbar 1 End */
     /* Navbar 2 */
     
+    .main-nav {
+        background-color: #ffffff;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+    
+    .main-nav .row {
+        width: 90%;
+        margin: auto;
+        padding: 25px 0;
+    }
+    
     .n1 {
         text-decoration: none;
         color: black;
@@ -314,9 +327,32 @@
         cursor: pointer;
     }
     
+    .main-nav ul a:hover {
+        color: #ffffff;
+        background-color: #0033a0;
+    }
+    
     .n1-active {
         color: #ffffff;
         background-color: #0033a0;
+    }
+    
+    .main-nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main-nav .dropdown-icon {
+        padding-left: 6px;
+    }
+    
+    @media screen and (max-width:1024px) {
+        .main-nav {
+            position: unset;
+        }
     }
     
     .n1-dropdown {
@@ -326,6 +362,15 @@
         position: absolute;
         left: 0;
         display: none;
+    }
+    
+    @media screen and (max-width:1024px) {
+        .main-nav .row {
+            width: 100%;
+        }
+        .main-nav ul {
+            display: none;
+        }
     }
     
     .nav2 .text-style {
@@ -481,7 +526,7 @@
     }
     
     .perpective-app-banner {
-        background: url(../images/perspectives-app-banner-mobile_new.jpg) no-repeat;
+        background: url("https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/perspectives-app-banner-mobile_new.jpg") no-repeat;
         background-size: 100% auto;
         height: 250px;
         display: flex;
@@ -509,11 +554,11 @@
     /* Slideshow Carousel */
     
     .carousel .carousel-indicators li {
-        height: 5px;
+        height: 6px;
         width: 35px;
         margin: 0px 8px;
-        background-color: #fff;
-        background-color: rgba(70, 70, 70, 0.25);
+        /* background-color: #fff; */
+        background-color: #555;
     }
     
     .carousel .carousel-indicators .active {
@@ -1249,11 +1294,20 @@
     /* Cts Reports Start */
     
     .cts-reports .container {
-        background-color: #0033a0;
         margin: 140px auto 40px auto;
     }
     
+    .cts-reports .cts-reports-item {
+        background-color: #0033a0;
+    }
+    
     @media only screen and (max-width: 768px) {
+        .cts-reports .container {
+            max-width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
         .cts-reports .container {
             max-width: 100%;
         }
@@ -1435,7 +1489,7 @@
         color: #00b140;
         text-align: left;
         font-size: 46px;
-        margin-top: 120px;
+        margin-top: 150px;
     }
     
     @media only screen and (max-width: 768px) {
@@ -1786,11 +1840,34 @@
     /* Take the First Step Start */
     
     .fs-section {
-        background-image: url("../images/form_bg.jpg");
+        background-image: url("https://www.cognizant.com/content/dam/cognizant_foundation/images/form_bg.jpg");
         background-size: cover;
         background-position: center;
         padding: 50px 0px;
         background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .fs-section {
+            background-image: url("https://www.cognizant.com/content/dam/cognizant_foundation/images/form_bg.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .fs-section {
+            background-image: url("https://www.cognizant.com/content/dam/cognizant_foundation/images/form_bg.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
     }
     
     .fs-section .fs-heading {
@@ -1838,6 +1915,11 @@
             text-align: center;
             margin: 20px;
         }
+    }
+    
+    .fs-section .fs-button {
+        opacity: 0.4;
+        pointer-events: none;
     }
     /* Form Start */
     
@@ -2099,3 +2181,16 @@
         color: #00b140 !important;
     }
     /* Footer End */
+    /* Annimation Start */
+    
+    .animate-this {
+        transform: scale(1.2) translateY(100px);
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .in-viewport {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    /* Annimation End */

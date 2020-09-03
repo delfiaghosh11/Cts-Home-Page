@@ -9,10 +9,11 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/main.css">
     <!-- Bootstrap related css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .sticky {
             position: fixed;
@@ -22,7 +23,7 @@
             background-color: white;
         }
         
-        .sticky+.slide-show+.card-section+.annual-report+.press-release+.cts-reports+.latest-thinking+.dc-section+.fs-section {
+        .sticky+.content-wrapper {
             padding-top: 50px;
         }
     </style>
@@ -224,9 +225,9 @@
             </div>
 
             <!-- Navs 2 -->
-            <nav id="nav2" class="nav2 navbar navbar-expand-lg justify-content-between py-lg-3">
+            <nav id="nav2" class="nav2 navbar navbar-expand-lg justify-content-between py-lg-3 main-nav">
                 <a class="navbar-brand" href="https://www.cognizant.com">
-                    <img class="d-inline-block" src="images/COG-Logo-White.svg" alt="Cognizant" style="height: 46.78px; width: 220px;">
+                    <img class="d-inline-block" src="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/COG-Logo-White.svg" alt="Cognizant" style="height: 46.78px; width: 220px;">
                 </a>
                 <div class="hamburger-container">
                     <a class="hamburger">
@@ -238,7 +239,7 @@
                         <!-- Dropdown Menu of Industries -->
                         <li class="nav-item dropdown px-lg-1">
                             <a class="nav-link text-style dropdown-toggle remove-caret px-2 n1" id="industries" href="#" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 50" xml:space="preserve">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 50" xml:space="preserve" onclick="myFunction(this)">
                                 <g fill="#00b140" stroke="#00b140">
                                     <path d="M26.88,44.574L0,9.186h53.76L26.88,44.574z M4.709,11.521L26.88,40.715l22.172-29.193H4.709z" stroke-width="2"></path>
                                 </g>
@@ -268,7 +269,7 @@
                                         <a class="dropdown-item" href="#">Utilities<span class="pic arrow-right"></span></a>
                                     </div>
                                     <div class="col col-md-3 py-3">
-                                        <img class="dropdown-item" src="images/CBC_360x100_navIMAGE.jpg" alt="Cognizant Consulting" width="290px" height="80px">
+                                        <img class="dropdown-item" src="https://www.cognizant.com/content/dam/cognizant_foundation/images/CBC_360x100_navIMAGE.jpg" alt="Cognizant Consulting" width="290px" height="80px">
                                         <h6 class="dropdown-header my-md-1" style="font-weight: 700; color: white; font-size: 20px;">COGNIZANT CONSULTING</h6>
                                         <a class="dropdown-item desc" href="#">Helping organizations engage</br>people and uncover insight</br>from data to shape the</br>products, services and</br>experiences they offer</a>
                                         <a class="dropdown-item mt-md-2" href="#" style="font-weight: 500;">Learn More<span class="pic arrow-right"></span></a>
@@ -288,7 +289,7 @@
                             <div class="dropdown-menu dropdown-height n1-dropdown" role="menu" aria-labelledby="dropdownMenu">
                                 <div class="row">
                                     <div class="col col-md-3 px-4 py-3">
-                                        <img class="dropdown-header" src="images/logo-cog-cdb-white-color.svg" alt="Cognizant" height="60px">
+                                        <img class="dropdown-header" src="https://www.cognizant.com/content/dam/cognizant_foundation/images/branded-logos/logos-cognizant/logo-cog-cdb-white-color.svg" alt="Cognizant" height="60px">
                                         <div class="dropdown-divider ml-md-3" style="border-color: #687FF3;"></div>
                                         <a class=" dropdown-item" href="# ">Artificial Intelligence<span class="pic arrow-right"></span></a>
                                         <a class="dropdown-item" href="# ">Digital Engineering<span class="pic arrow-right"></span></a>
@@ -297,14 +298,14 @@
                                         <a class="dropdown-item" href="# ">Internet of Things<span class="pic arrow-right"></span></a>
                                     </div>
                                     <div class="col col-md-3 py-3 ">
-                                        <img class="dropdown-header" src="images/logo-cog-cdo-white-color.svg" alt="Cognizant" height="60px">
+                                        <img class="dropdown-header" src="https://www.cognizant.com/content/dam/cognizant_foundation/images/branded-logos/logos-cognizant/logo-cog-cdo-white-color.svg" alt="Cognizant" height="60px">
                                         <div class="dropdown-divider ml-md-3" style="border-color: #687FF3;"></div>
                                         <a class="dropdown-item" href="# ">Enterprise Services<span class="pic arrow-right"></span></a>
                                         <a class="dropdown-item" href="# ">Industry & Platform</br>Solutions<span class="pic arrow-right"></span></a>
                                         <a class="dropdown-item" href="# ">Intelligent Process</br>Automation<span class="pic arrow-right"></span></a>
                                     </div>
                                     <div class="col col-md-3 py-3 ">
-                                        <img class="dropdown-header" src="images/logo-cog-cdst-white-color.svg" alt="Cognizant" height="60px">
+                                        <img class="dropdown-header" src="https://www.cognizant.com/content/dam/cognizant_foundation/images/branded-logos/logos-cognizant/logo-cog-cdst-white-color.svg" alt="Cognizant" height="60px">
                                         <div class="dropdown-divider ml-md-3" style="border-color: #687FF3;"></div>
                                         <a class="dropdown-item" href="# ">Application Services<span class="pic arrow-right"></span></a>
                                         <a class="dropdown-item" href="# ">Cloud Enablement<span class="pic arrow-right"></span></a>
@@ -315,7 +316,7 @@
                                         <a class="dropdown-item" href="# ">Quality Engineering &</br>Assurances<span class="pic arrow-right"></span></a>
                                     </div>
                                     <div class="col col-md-3 py-3 ">
-                                        <img class="dropdown-item" src="images/CBC_360x100_navIMAGE.jpg" alt="Cognizant Consulting" width="290px" height="80px">
+                                        <img class="dropdown-item" src="https://www.cognizant.com/content/dam/cognizant_foundation/images/CBC_360x100_navIMAGE.jpg" alt="Cognizant Consulting" width="290px" height="80px">
                                         <h6 class="dropdown-header my-md-1" style="font-weight: 700; color: white; font-size: 20px;">COGNIZANT CONSULTING</h6>
                                         <a class="dropdown-item desc" href="#">Helping organizations engage</br>people and uncover insight</br>from data to shape the</br>products, services and</br>experiences they offer</a>
                                         <a class="dropdown-item mt-md-2" href="#" style="font-weight: 500;">Learn More<span class="pic arrow-right"></span></a>
@@ -334,7 +335,6 @@
                         </a>
                             <div class="dropdown-menu dropdown-height n1-dropdown" role="menu" aria-labelledby="dropdownMenu">
                                 <div class="row">
-
                                     <div class="col col-md-3 px-4 py-3">
                                         <div class="dropdown-header" href="#" style="color: white; font-size: 20px; font-weight: 600;">Our Media & Publications</div>
                                         <a class="dropdown-item" href="#">All Latest Thinking<span class="pic arrow-right"></span></a>
@@ -368,10 +368,10 @@
                                         <div class="perpective-app-banner">
                                             <div class="app-banner-download">
                                                 <a href="#">
-                                                    <img src="images/app-store-logo.png" class="img img-fluid" />
+                                                    <img src="https://www.cognizant.com/content/dam/cognizant_foundation/images/app-store-logo.png" class="img img-fluid" />
                                                 </a>
                                                 <a href="#">
-                                                    <img src="images/get-it-on-google-play.png" class="img img-fluid" />
+                                                    <img src="https://www.cognizant.com/content/dam/cognizant_foundation/images/9DB3D190FD6DC8155EEDBCDEB4942128BE6B.png" class="img img-fluid" />
                                                 </a>
                                             </div>
                                         </div>
@@ -418,10 +418,10 @@
                                         <div class="perpective-app-banner">
                                             <div class="app-banner-download">
                                                 <a href="#">
-                                                    <img src="images/app-store-logo.png" class="img img-fluid" />
+                                                    <img src="https://www.cognizant.com/content/dam/cognizant_foundation/images/app-store-logo.png" class="img img-fluid" />
                                                 </a>
                                                 <a href="#">
-                                                    <img src="images/get-it-on-google-play.png" class="img img-fluid" />
+                                                    <img src="https://www.cognizant.com/content/dam/cognizant_foundation/images/9DB3D190FD6DC8155EEDBCDEB4942128BE6B.png" class="img img-fluid" />
                                                 </a>
                                             </div>
                                         </div>
@@ -446,10 +446,10 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <picture>
-                            <source srcset="images/slider/hp-chaos-to-catalyst-desk.jpg" media="(min-width: 1400px)">
-                            <source srcset="images/slider/HP-chaos-to-catalyst-tablet.jpg" media="(min-width: 768px)">
-                            <source srcset="images/slider/HP-chaos-to-catalyst-mobile.jpg" media="(max-width: 578px)">
-                            <img srcset="images/slider/hp-chaos-to-catalyst-desk.jpg" class="d-block w-100 img-fluid" alt="Slider 1">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/images/hp-chaos-to-catalyst-desk.jpg" media="(min-width: 1400px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/images/HP-chaos-to-catalyst-tablet.jpg" media="(min-width: 768px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/images/HP-chaos-to-catalyst-mobile.jpg" media="(max-width: 578px)">
+                            <img srcset="https://www.cognizant.com/content/dam/cognizant_foundation/images/hp-chaos-to-catalyst-desk.jpg" class="d-block w-100 img-fluid" alt="Slider 1">
                         </picture>
                         <div class="carousel-caption d-md-block">
                             <div class="row">
@@ -474,10 +474,10 @@
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source srcset="images/slider/hp-sip-desktop.jpg" media="(min-width:1400px)">
-                            <source srcset="images/slider/hp2-sip-tablet.jpg" media="(min-width:768px)">
-                            <source srcset="images/slider/hp2-sip-mobile.jpg" media="(max-width:578px)">
-                            <img srcset="images/slider/hp-sip-desktop.jpg" class="d-block w-100 img-fluid" alt="Slider 2">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/hp-sip-desktop.jpg" media="(min-width:1400px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/images/hp2-sip-tablet.jpg" media="(min-width:768px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/images/hp2-sip-mobile.jpg" media="(max-width:578px)">
+                            <img srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/hp-sip-desktop.jpg" class="d-block w-100 img-fluid" alt="Slider 2">
                         </picture>
                         <div class="carousel-caption d-md-block text-dark text-justify">
                             <div class="row">
@@ -503,10 +503,10 @@
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source srcset="images/slider/q2-homepage-paycheck-protection-program-banner.jpg" media="(min-width:1400px)">
-                            <source srcset="images/slider/q2-homepage-paycheck-protection-program-banner-tablet.jpg" media="(min-width:768px)">
-                            <source srcset="images/slider/q2-homepage-paycheck-protection-program-banner-mobile.jpg" media="(max-width:578px)">
-                            <img srcset="images/slider/q2-homepage-paycheck-protection-program-banner.jpg" class="d-block w-100 img-fluid" alt="Slide 3">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-homepage-paycheck-protection-program-banner.jpg" media="(min-width:1400px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-homepage-paycheck-protection-program-banner-tablet.jpg" media="(min-width:768px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-homepage-paycheck-protection-program-banner-mobile.jpg" media="(max-width:578px)">
+                            <img srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-homepage-paycheck-protection-program-banner.jpg" class="d-block w-100 img-fluid" alt="Slide 3">
                         </picture>
                         <div class="carousel-caption d-md-block text-dark text-justify">
                             <div class="row">
@@ -531,10 +531,10 @@
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source srcset="images/slider/marketing-operations-solutions-homepage-spotlight-banner.jpg" media="(min-width:1400px)">
-                            <source srcset="images/slider/marketing-operations-solutions-banner-tab.jpg" media="(min-width:768px)">
-                            <source srcset="images/slider/marketing-operations-solutions-banner-mobile.jpg" media="(max-width:578px)">
-                            <img srcset="images/slider/marketing-operations-solutions-homepage-spotlight-banner.jpg" class="d-block w-100 img-fluid" alt="Slide 4">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/marketing-operations-solutions-homepage-spotlight-banner.jpg" media="(min-width:1400px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/marketing-operations-solutions-banner-tab.jpg" media="(min-width:768px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/marketing-operations-solutions-banner-mobile.jpg" media="(max-width:578px)">
+                            <img srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/marketing-operations-solutions-homepage-spotlight-banner.jpg" class="d-block w-100 img-fluid" alt="Slide 4">
                         </picture>
                         <div class="carousel-caption d-md-block text-dark text-justify">
                             <div class="row">
@@ -559,10 +559,10 @@
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source srcset="images/slider/q2-policyholder-connect-banner.jpg" media="(min-width:1400px)">
-                            <source srcset="images/slider/q2-policyholder-connect-banner-tablet.jpg" media="(min-width:768px)">
-                            <source srcset="images/slider/q2-policyholder-connect-banner-mobile.jpg" media="(max-width:578px)">
-                            <img srcset="images/slider/q2-policyholder-connect-banner.jpg" class="d-block w-100 img" alt="Slide 5">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-policyholder-connect-banner.jpg" media="(min-width:1400px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-policyholder-connect-banner-tablet.jpg" media="(min-width:768px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-policyholder-connect-banner-mobile.jpg" media="(max-width:578px)">
+                            <img srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-policyholder-connect-banner.jpg" class="d-block w-100 img" alt="Slide 5">
                         </picture>
                         <div class="carousel-caption d-md-block text-dark text-justify">
                             <div class="row">
@@ -587,10 +587,10 @@
                     </div>
                     <div class="carousel-item">
                         <picture>
-                            <source srcset="images/slider/q2-homepage-virtual-care-banner.jpg" media="(min-width:1400px)">
-                            <source srcset="images/slider/q2-homepage-virtual-care-tablet.jpg" media="(min-width:768px)">
-                            <source srcset="images/slider/q2-homepage-virtual-care-mobile.jpg" media="(max-width:578px)">
-                            <img srcset="images/slider/q2-homepage-virtual-care-banner.jpg" class="d-block w-100 img-fluid" alt="Slide 6">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-homepage-virtual-care-banner.jpg" media="(min-width:1400px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-homepage-virtual-care-tablet.jpg" media="(min-width:768px)">
+                            <source srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-homepage-virtual-care-mobile.jpg" media="(max-width:578px)">
+                            <img srcset="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-homepage-virtual-care-banner.jpg" class="d-block w-100 img-fluid" alt="Slide 6">
                         </picture>
                         <div class="carousel-caption d-md-block text-dark text-justify">
                             <div class="row">
@@ -637,13 +637,13 @@
             </div>
 
             <!-- Card Section -->
-            <div class="container-fluid card-section">
+            <div class="container card-section">
                 <!-- Card 1 -->
                 <div class="card1 row">
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-auto">
-                                <img src="images/box/ClientStories-spotlight.jpg" class="img-fluid card-img" alt="Client Stories">
+                                <img src="https://www.cognizant.com/content/dam/cognizant_foundation/images/ClientStories-spotlight.jpg" class="img-fluid card-img" alt="Client Stories">
                             </div>
                             <div class="col">
                                 <div class="card-body">
@@ -674,7 +674,7 @@
                     <!-- Card 2 -->
                     <div class="col col-md-6 card2 pr-md-0 pl-md-0">
                         <div class="card">
-                            <img src="images/box/clinical-trials-at-home-spotlight2.jpg " class="card-img-top " alt="Clinical Trials ">
+                            <img src="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/clinical-trials-at-home-spotlight2.jpg" class="card-img-top " alt="Clinical Trials ">
                             <div class="card-body ">
                                 <a href="# ">
                                     <button class="button button-outline-blue mb-3 ">
@@ -703,7 +703,7 @@
                     <!-- Card 3 -->
                     <div class="col col-md-6 card3 pr-md-0 pl-md-0">
                         <div class="card">
-                            <img src="images/box/three-myths-and-fixes-for-paycheck-protection-program-next-phase-perspectives-spotlight-homepage.jpg" class="card-img-top " alt="Clinical Trials ">
+                            <img src="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/three-myths-and-fixes-for-paycheck-protection-program-next-phase-perspectives-spotlight-homepage.jpg" class="card-img-top " alt="Clinical Trials ">
                             <div class="card-body ">
                                 <a href="# ">
                                     <button class="button button-outline-blue mb-3 ">
@@ -757,7 +757,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-auto">
-                                <img src="images/box/safe-and-smart-buildings-spotlight.jpg" class="img-fluid card-img" alt="Safe and Smart Buildings">
+                                <img src="https://www.cognizant.com/content/dam/cognizant_foundation/images/safe-and-smart-buildings-spotlight.jpg" class="img-fluid card-img" alt="Safe and Smart Buildings">
                             </div>
                         </div>
                     </div>
@@ -767,7 +767,7 @@
                     <!-- Card 5 -->
                     <div class="col col-md-6 card2 pr-md-0 pl-md-0">
                         <div class="card">
-                            <img src="images/box/covid-Response_spotlight.jpg " class="card-img-top " alt="Covid Responsive ">
+                            <img src="https://www.cognizant.com/content/dam/cognizant_foundation/images/covid-Response_spotlight.jpg" class="card-img-top " alt="Covid Responsive ">
                             <div class="card-body ">
                                 <a href="# ">
                                     <button class="button button-outline-blue mb-3 ">
@@ -794,7 +794,7 @@
                     <!-- Card 6 -->
                     <div class="col col-md-6 card3 pr-md-0 pl-md-0">
                         <div class="card">
-                            <img src="images/box/q2-homepage-cognizant-policyholder-connect-insurance-spotlight-video.jpg" class="card-img-top " alt="Connect Insurance">
+                            <img src="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/q2-homepage-cognizant-policyholder-connect-insurance-spotlight-video.jpg" class="card-img-top " alt="Connect Insurance">
                             <div class="card-body ">
                                 <a href="# ">
                                     <button class="button button-outline-blue mb-3 ">
@@ -822,7 +822,7 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-auto">
-                                <img src="images/box/gartner-hp-spotlight.jpg" class="img-fluid card-img" alt="Gartner HP">
+                                <img src="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/gartner-hp-spotlight.jpg" class="img-fluid card-img" alt="Gartner HP">
                             </div>
                             <div class="col">
                                 <div class="card-body">
@@ -857,7 +857,7 @@
                         <div class="col mb-1 col-lg-12 col-md-12 col-sm-12 p-sm-1">
                             <div class="row px-2 pb-1 align-middle">
                                 <div class="col col-md-6 col-lg-4 text-center p-sm-1 my-5">
-                                    <img class="annual-report-img" src=" images/box/annual-report-2019.png " alt="Annual Report 2019 ">
+                                    <img class="annual-report-img" src="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/annual-report-2019.png" alt="Annual Report 2019 ">
                                 </div>
                                 <div class="col col-md-6 col-lg-8 p-sm-1 my-5 annual-report-desc">
                                     <h5 class="heading-report ">Solving real human problems</h5>
@@ -926,11 +926,12 @@
             <!-- Cts Reports -->
             <div class="cts-reports">
                 <div class="container text-center">
-                    </br>
-                    <p class="cts-reports-date"><i class="fa fa-newspaper-o" aria-hidden="true" style="color: white;"></i>&nbsp;PRESS RELEASE | 07.29.2020</p>
-                    <p class="cts-reports-text">Cognizant Reports Second Quarter 2020 Results</p>
-                    <a class="button-center" href="#">
-                        <button class="button button-outline-white">
+                    <div class="cts-reports-item animate-this">
+                        </br>
+                        <p class="cts-reports-date"><i class="fa fa-newspaper-o" aria-hidden="true" style="color: white;"></i>&nbsp;PRESS RELEASE | 07.29.2020</p>
+                        <p class="cts-reports-text">Cognizant Reports Second Quarter 2020 Results</p>
+                        <a class="button-center" href="#">
+                            <button class="button button-outline-white">
                     <span style="font-size: large;">READ MORE</span>
                     <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 55 50 " xml:space="preserve ">
                         <g fill="#fff " stroke="#fff ">
@@ -938,7 +939,8 @@
                         </g>
                     </svg>
                 </button>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -957,7 +959,7 @@
                                 <div class="row mb-5">
                                     <div class="col-lg-6 col-md-12 mb-3">
                                         <div class="card w-100 card-1">
-                                            <img src="images/slider-box/decision-process-automation-a-vital-tool-for-assessing-todays-volumes-of-data_TL.jpg" class="card-img-top" alt="Card 1">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/images/by-the-numbers-digital-maturity-in-asia_TL.jpg" class="card-img-top" alt="Card 1">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1004,7 +1006,7 @@
                                     <div class="col-lg-6 col-md-12">
                                         <div class="row mb-3">
                                             <div class="card w-100 card-2">
-                                                <img src="images/slider-box/continuous-testing-is-key-for-enterprises-to-adopt-ai-platforms-codex5832_TL.jpg" class="card-img-top" alt="Card 2">
+                                                <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/whitepaper_thumbnails/driving-digital-experience-through-the-cloud-Codex3022_TL.jpg" class="card-img-top" alt="Card 2">
                                                 <a class="link" href="#">
                                                     <button class="button button-outline-blue">
                                                 <span>
@@ -1050,7 +1052,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="card w-100 card-3">
-                                                <img src="images/slider-box/six-steps-to-reimagine-software-engineering_TL.jpg" class="card-img-top" alt="Card 3">
+                                                <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/images/evaluating-shared-services-captive-centers-in-today-s-world_TL.jpg" class="card-img-top" alt="Card 3">
                                                 <a class="link" href="#">
                                                     <button class="button button-outline-blue">
                                                 <span>
@@ -1102,7 +1104,7 @@
                                 <div class="row mb-3">
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/going-digital-not-without-a-simple-modern-and-secure-it-backbone-codex3016_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/images/creating-more-educated-policyholders-through-personalized-video_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1152,7 +1154,7 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/plotting-a-course-for-digital-business-a-structured-approach-codex2845_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/images/pet-insurance-seven-key-themes-for-growth-in-a-hot-and-getting-hotter-market_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1198,7 +1200,7 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/continuous-delivery-operating-model-for-entertainment-video-providers-codex5348_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/whitepaper_thumbnails/iot-powering-the-future-of-business-and-improving-everyday-life-codex5711_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1246,7 +1248,7 @@
                                 <div class="row mb-5">
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/data-and-analytic-models-have-a-best-used-by-date-ignore-them-at-your-peril_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/images/decision-process-automation-a-vital-tool-for-assessing-todays-volumes-of-data_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1298,7 +1300,7 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/scaled-and-distributed-scrum-key-considerations-for-success-codex4017_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/images/six-steps-to-reimagine-software-engineering_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1344,7 +1346,7 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/achieve-unmatched-user-experiences-with-conversational-ai-codex5468_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/whitepaper_thumbnails/continuous-testing-is-key-for-enterprises-to-adopt-ai-platforms-codex5832_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1400,7 +1402,7 @@
                                 <div class="row mb-3">
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/going-digital-not-without-a-simple-modern-and-secure-it-backbone-codex3016_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/whitepaper_thumbnails/going-digital-not-without-a-simple-modern-and-secure-it-backbone-codex3016_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1450,7 +1452,7 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/plotting-a-course-for-digital-business-a-structured-approach-codex2845_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/images/data-and-analytic-models-have-a-best-used-by-date-ignore-them-at-your-peril_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1496,7 +1498,7 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/continuous-delivery-operating-model-for-entertainment-video-providers-codex5348_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/whitepaper_thumbnails/achieve-unmatched-user-experiences-with-conversational-ai-codex5468_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1549,7 +1551,7 @@
                                 <div class="row mb-5">
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/data-and-analytic-models-have-a-best-used-by-date-ignore-them-at-your-peril_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/whitepaper_thumbnails/plotting-a-course-for-digital-business-a-structured-approach-codex2845_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1601,7 +1603,7 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6 mb-3">
                                         <div class="card w-100 card-3">
-                                            <img src="images/slider-box/scaled-and-distributed-scrum-key-considerations-for-success-codex4017_TL.jpg" class="card-img-top" alt="Card 3">
+                                            <img src="https://www.cognizant.com/content/dam/Cognizant_Dotcom/whitepaper_thumbnails/scaled-and-distributed-scrum-key-considerations-for-success-codex4017_TL.jpg" class="card-img-top" alt="Card 3">
                                             <a class="link" href="#">
                                                 <button class="button button-outline-blue">
                                             <span>
@@ -1707,66 +1709,72 @@
                         <a class="nav-link p-0 pr-1 text">|</a>
                         <a class="nav-link p-0 link link-2" href="#">Most Popular</a>
                     </ul>
-                    <div class="row my-3 mx-4">
-                        <div class="row w-100">
-                            <p class="dc-date text-muted">September 01, 2020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 Views</p>
-                        </div>
-                        <div class="row w-100">
-                            <p class="dc-content-heading">With the Next Phase of PPP Undecided, Here’s What Banks Can Do to Prepare</p>
-                        </div>
-                        <div class="row w-100">
-                            <p class="dc-text">Here's what PPP lenders can do during this period of legislative limbo to ensure they can act quickly when more clarity is gained.</p>
-                        </div>
-                        <div class="row w-100 mb-3">
-                            <div class="col-1 align-self-center mr-1">
-                                <img src="images/profile/Jack Leach-432.jpg" alt="Jack Leach">
+                    <div class="border-bottom animate-this">
+                        <div class="row my-3 mx-4">
+                            <div class="row w-100">
+                                <p class="dc-date text-muted">September 01, 2020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 Views</p>
                             </div>
-                            <div class="col-6 align-self-center ml-1">
-                                <span class="dc-author text-muted">By Jack Leach</span>
+                            <div class="row w-100">
+                                <p class="dc-content-heading">With the Next Phase of PPP Undecided, Here’s What Banks Can Do to Prepare</p>
                             </div>
-                        </div>
-                    </div>
-                    <hr style="border-color: #77777B; size: 50;">
-                    <div class="row mb-3 mt-4 mx-4">
-                        <div class="row w-100">
-                            <p class="dc-date text-muted">August 31, 2020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;115 Views</p>
-                        </div>
-                        <div class="row w-100">
-                            <p class="dc-content-heading">Augmented and Virtual Reality Will Fill in the Gaps Enforced by Social Distancing</p>
-                        </div>
-                        <div class="row w-100">
-                            <p class="dc-text">In a contactless world, organizations will turn to augmented and virtual reality to design employee and customer interactions.</p>
-                        </div>
-                        <div class="row w-100 mb-3">
-                            <div class="col-1 align-self-center mr-1">
-                                <img src="images/profile/Amresh Singh-337.jpg" alt="Amresh Singh">
+                            <div class="row w-100">
+                                <p class="dc-text">Here's what PPP lenders can do during this period of legislative limbo to ensure they can act quickly when more clarity is gained.</p>
                             </div>
-                            <div class="col-6 align-self-center ml-1">
-                                <span class="dc-author text-muted">By Amresh Singh</span>
+                            <div class="row w-100 mb-3">
+                                <div class="col-1 align-self-center mr-1">
+                                    <img src="https://digitally.cognizant.com/wp-content/authors/Jack%20Leach-432.jpg" alt="Jack Leach">
+                                </div>
+                                <div class="col-6 align-self-center ml-1">
+                                    <span class="dc-author text-muted">By Jack Leach</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <hr style="border-color: #77777B; size: 50;">
-                    <div class="row mb-3 mt-4 mx-4">
-                        <div class="row w-100">
-                            <p class="dc-date text-muted">August 28, 2020 84 Views</p>
-                        </div>
-                        <div class="row w-100">
-                            <p class="dc-content-heading">Don’t Give Up On the Main Street Lending Program Just Yet</p>
-                        </div>
-                        <div class="row w-100">
-                            <p class="dc-text">In the face of ongoing economic turmoil, here's how banks can help turn the Main Street Lending Program into a key life preserver for at-risk SMBs.</p>
-                        </div>
-                        <div class="row w-100 mb-3">
-                            <div class="col-1 align-self-center mr-1">
-                                <img src="images/profile/Jack Leach-432.jpg" alt="Jack Leach">
+                    <!-- <hr style="border-color: #77777B; size: 50;"> -->
+                    <div class="border-bottom animate-this">
+                        <div class="row mb-3 mt-4 mx-4">
+                            <div class="row w-100">
+                                <p class="dc-date text-muted">August 31, 2020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;115 Views</p>
                             </div>
-                            <div class="col-6 align-self-center ml-1">
-                                <span class="dc-author text-muted">By Jack Leach</span>
+                            <div class="row w-100">
+                                <p class="dc-content-heading">Augmented and Virtual Reality Will Fill in the Gaps Enforced by Social Distancing</p>
+                            </div>
+                            <div class="row w-100">
+                                <p class="dc-text">In a contactless world, organizations will turn to augmented and virtual reality to design employee and customer interactions.</p>
+                            </div>
+                            <div class="row w-100 mb-3">
+                                <div class="col-1 align-self-center mr-1">
+                                    <img src="https://digitally.cognizant.com/wp-content/authors/Amresh%20Singh-337.jpg" alt="Amresh Singh">
+                                </div>
+                                <div class="col-6 align-self-center ml-1">
+                                    <span class="dc-author text-muted">By Amresh Singh</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <hr style="border-color: #77777B; size: 50;">
+                    <!-- <hr style="border-color: #77777B; size: 50;"> -->
+                    <div class="border-bottom animate-this">
+                        <div class="row mb-3 mt-4 mx-4">
+                            <div class="row w-100">
+                                <p class="dc-date text-muted">August 28, 2020 84 Views</p>
+                            </div>
+                            <div class="row w-100">
+                                <p class="dc-content-heading">Don’t Give Up On the Main Street Lending Program Just Yet</p>
+                            </div>
+                            <div class="row w-100">
+                                <p class="dc-text">In the face of ongoing economic turmoil, here's how banks can help turn the Main Street Lending Program into a key life preserver for at-risk SMBs.</p>
+                            </div>
+                            <div class="row w-100 mb-3">
+                                <div class="col-1 align-self-center mr-1">
+                                    <img src="https://digitally.cognizant.com/wp-content/authors/Jack%20Leach-432.jpg" alt="Jack Leach">
+                                </div>
+                                <div class="col-6 align-self-center ml-1">
+                                    <span class="dc-author text-muted">By Jack Leach</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <hr style="border-color: #77777B; size: 50;"> -->
                     <div class="row my-5 justify-content-md-end">
                         <div class="row dc-button">
                             <a href="#">
@@ -2036,19 +2044,14 @@
     </script>
 
     <!-- Bootstrap related js -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script> -->
-
-    <!-- <script src="js/main.js"></script>
-    <script src="js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
 
     <!-- wrapper -->
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js "></script>
+    <script src="js/bootstrap.min.js "></script> -->
     <script src="js/main.js "></script>
 
 
