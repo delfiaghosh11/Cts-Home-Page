@@ -21,7 +21,6 @@ $(document).click(function(event) {
     if ($('.n1').hasClass('n1-active') && $(event.target).closest(".n1").length == 0 && $(event.target).closest(".n1-dropdown").length == 0) {
         $('.n1').removeClass('n1-active');
         $(".n1").children("img").attr("src", "images/green-dropdown.svg");
-
     }
     //for dropdown
     if ($(event.target).closest(".n1").length == 0 && $(event.target).closest(".n1-dropdown").length == 0) {
