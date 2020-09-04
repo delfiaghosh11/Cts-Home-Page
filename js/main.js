@@ -6,9 +6,9 @@ $(".n1").click(function() {
     this.classList.toggle("n1-active"); //toggle active class if clicked while active
 
     //for icon toggle
-    $(".n1").not(this).children("img").attr("src", "./images/green-dropdown.svg"); //remove close icon on other links
+    $(".n1").not(this).children("img").attr("src", "images/green-dropdown.svg"); //remove close icon on other links
     $(this).children("img").attr("src", function(index, attr) {
-        return attr == "./images/close-icon.svg" ? "./images/green-dropdown.svg" : "./images/close-icon.svg"; //toggle close icon if clicked while active
+        return attr == "/images/close-icon.svg" ? "images/green-dropdown.svg" : "images/close-icon.svg"; //toggle close icon if clicked while active
     });
 
     //for menu toggle
@@ -20,7 +20,8 @@ $(".n1").click(function() {
 $(document).click(function(event) {
     if ($('.n1').hasClass('n1-active') && $(event.target).closest(".n1").length == 0 && $(event.target).closest(".n1-dropdown").length == 0) {
         $('.n1').removeClass('n1-active');
-        $(".n1").children("img").attr("src", "./images/green-dropdown.svg");
+        $(".n1").children("img").attr("src", "images/green-dropdown.svg");
+
     }
     //for dropdown
     if ($(event.target).closest(".n1").length == 0 && $(event.target).closest(".n1-dropdown").length == 0) {
@@ -32,7 +33,7 @@ $(document).click(function(event) {
 $(window).scroll(function() {
     if ($(this).scrollTop() > 0) {
         $('.n1').removeClass('n1-active');
-        $(".n1").children("img").attr("src", "./images/green-dropdown.svg");
+        $(".n1").children("img").attr("src", "images/green-dropdown.svg");
         $(".n1").siblings(".n1-dropdown").hide();
     }
 });

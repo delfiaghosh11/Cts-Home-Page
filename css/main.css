@@ -303,13 +303,12 @@
     }
     /* Navbar 1 End */
     /* Navbar 2 */
-    
-    .main-nav {
+    /* .main-nav {
         background-color: #ffffff;
         position: sticky;
         top: 0;
         z-index: 1020;
-    }
+    } */
     
     .main-nav .row {
         width: 90%;
@@ -365,9 +364,9 @@
     }
     
     @media screen and (max-width:1024px) {
-        .main-nav .row {
+        /* .main-nav .row {
             width: 100%;
-        }
+        } */
         .main-nav ul {
             display: none;
         }
