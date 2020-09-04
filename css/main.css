@@ -881,12 +881,12 @@
     /* Card 1 Start */
     
     .card1 .card {
-        margin: 40px 0px 0px 0px;
+        margin: 60px 0px 0px 0px;
     }
     
     @media only screen and (max-width: 768px) {
         .card1 .card {
-            margin: 40px 10px 0px 10px;
+            margin: 60px 10px 0px 10px;
         }
     }
     
@@ -956,14 +956,14 @@
     .card2 .card {
         margin: 30px 10px 0px 0px;
         width: auto;
-        height: 640px;
+        height: 100%;
     }
     
     @media only screen and (max-width: 768px) {
         .card2 .card {
             margin: 30px 5px 0px 10px;
-            width: 95%;
-            height: 580px;
+            /* width: 95%; */
+            height: 100%;
         }
     }
     
@@ -1020,14 +1020,14 @@
     .card3 .card {
         margin: 30px 0px 0px 10px;
         width: auto;
-        height: 640px;
+        height: 100%;
     }
     
     @media only screen and (max-width: 768px) {
         .card3 .card {
             margin: 30px 10px 0px 5px;
-            width: 95%;
-            height: 580px;
+            /* width: 95%; */
+            height: 100%;
         }
     }
     
@@ -1082,12 +1082,12 @@
     /* Card 4 Start */
     
     .card4 .card {
-        margin: 30px 0px 0px 0px;
+        margin: 60px 0px 0px 0px;
     }
     
     @media only screen and (max-width: 768px) {
         .card4 .card {
-            margin: 30px 10px 0px 10px;
+            margin: 60px 10px 0px 10px;
         }
     }
     
